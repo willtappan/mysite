@@ -1,0 +1,32 @@
+
+{% extends 'core/base.html' %}
+{% block title %}About {% endblock %}
+ 
+{% block background %}{% load static %}{% static 'core/img/Drone.jpg' %}{% endblock %}
+
+{% block headers %} 
+    <h1>About</h1>
+    <span class="subheading">Resume</span>
+{% endblock %}
+           
+{% block content %}
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">William Tappan </h2>  
+
+        <p>Hola Soy Ingeniero Mecatronico .</p>
+        <p>Egresado del la Universidad del Valle de México </p>
+        <p>Desarrollador de software y hardware</p>
+        <p>Programación en C/C++, Python, Arduino, Dart, Kotlin </p>
+        <p>Frameworks: Flask, Django, APEX, Android, Flutter </p>
+        <p>Bases de Datos: Oracle, MySQL, SQLite PostgreSQL, </p
+        <p>Desarollador IoT: Raspberry, Arduino y Microchip </p>
+        <p>Cloud Developer: AWS, Google, Azure, Oracle </p>
+
+        
+
+    </div>
+{% endblock %} 
+

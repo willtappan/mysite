@@ -1,0 +1,40 @@
+
+{% extends 'core/base.html' %}
+{% block title %}About {% endblock %}
+ 
+{% block background %}{% load static %}{% static 'core/img/contacto.jpg' %}{% endblock %}
+
+{% block headers %} 
+    <h1>Contacto</h1>
+    <span class="subheading">Informacion</span>
+{% endblock %}
+           
+{% block content %}
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">William Tappan </h2>  
+
+        <p>Email</p>
+        <p>Contacto</p>
+
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="name" class="form-control" id="Name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput2">Email address</label>
+                <input type="email" class="form-control" id="Email" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">About</label>
+                <textarea class="form-control" id="About" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+        </form>
+
+    </div>
+{% endblock %} 
+
